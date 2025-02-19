@@ -1,7 +1,5 @@
 import re
-
-from Day import Day
-from Trip import Trip
+from Trip import Trip, Day
 
 
 class CohereParser:

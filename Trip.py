@@ -1,14 +1,28 @@
-from typing import List
-from dataclasses import dataclass, field
-from Day import Day
+from sqlmodel import SQLModel, Field, Relationship
+from typing import List, Optional
 
-@dataclass
-class Trip:
-    num_days: int
-    days: List[Day]
+class Day(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    trip_id: int = Field(foreign_key="trip.id")
+    morning: str
+    lunch: str
+    afternoon: str
+    dinner: str
+    evening: str
+    price: float
+
+    def edit_day(self, activity : str, new_price: int, old_price: int, new_act: str):
+        self.activities[activity] = new_act
+        self.price += (new_price - old_price)
+
+
+class Trip(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
     place: str
-    emphasis: List[str]  # Store as a list instead of comma-separated string
-    price: float = field(init=False)  # Auto-calculated in `__post_init__`
+    vibe: str
+    num_days: int
+    price: float
+    days: List[Day] = Relationship(back_populates="trip")
 
     def __post_init__(self):
         self.price = self.calculate_total_price()
@@ -19,3 +33,5 @@ class Trip:
     def edit_price(self, new_price: float):
         self.price += new_price
 
+
+Day.trip = Relationship(back_populates="days")

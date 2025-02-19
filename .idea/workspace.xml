@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b7f5493-9426-4264-999d-7e7e412e5211" name="Changes" comment="" />
+    <list default="true" id="8b7f5493-9426-4264-999d-7e7e412e5211" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trip_repo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CostEstimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FastAPI main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,6 +52,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\srgio\PycharmProjects\TourGuide" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="TourGuide" type="Python.FastAPI">
       <module name="TourGuide" />
@@ -69,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739657969517</updated>
-      <workItem from="1739657970902" duration="333000" />
+      <workItem from="1739657970902" duration="9061000" />
     </task>
     <servers />
   </component>
